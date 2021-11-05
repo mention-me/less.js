@@ -8063,7 +8063,7 @@
                     var path;
                     var features;
                     var index = parserInput.i;
-                    var dir = parserInput.$re(/^@import?\s+/);
+                    var dir = parserInput.$re(/^@import\s+/);
                     if (dir) {
                         var options = (dir ? this.importOptions() : null) || {};
                         if ((path = this.entities.quoted() || this.entities.url())) {
@@ -8214,7 +8214,7 @@
                     var args;
                     var options;
                     var index = parserInput.i;
-                    var dir = parserInput.$re(/^@plugin?\s+/);
+                    var dir = parserInput.$re(/^@plugin\s+/);
                     if (dir) {
                         args = this.pluginArgs();
                         if (args) {
